@@ -1,0 +1,35 @@
+/* style.css */
+
+/* Общий стиль для тела документа */
+body {
+    background-color: brown;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Стиль для заголовков */
+h1 {
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Стиль для абзацев */
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Стиль для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стиль для меню (если нужно) */
+/* .menu {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+} */

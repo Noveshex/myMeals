@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% block menu %}
+{% endblock menu %}
+{% block content %}
+    {% for el in content %}
+        <img src="{{ el.image }}">
+        <h1>{{ el.name }}</h1>
+        {% autoescape off %}
+        <p>{{ el.recipe }}</p>
+        {% endautoescape %}
+    {% endfor %}
+{% endblock content %}
+</body>
+</html>
